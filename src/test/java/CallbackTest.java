@@ -1,12 +1,10 @@
-package ru.netology.web;
-
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
 
 
 
-public class CallBackTest {
+class CallBackTest {
     @Test
     public void tt(){
         Selenide.open("http://localhost:9999");
