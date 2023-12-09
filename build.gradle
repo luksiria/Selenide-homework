@@ -16,15 +16,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'junit:junit:4.13.1'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
     // библиотека com.codeborne:selenide используется при построении проекта с использованием Selenide
-    implementation 'com.codeborne:selenide:6.12.3'
+    implementation 'com.codeborne:selenide:6.17.2'
 
     // при реализации проекте с использованием Selenium вместо библиотеки com.codeborne:selenide подключаются
     // org.seleniumhq.selenium:selenium-java и io.github.bonigarcia:webdrivermanager
-    testImplementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
-    testImplementation 'io.github.bonigarcia:webdrivermanager:5.4.1'
 }
 
 test {
@@ -34,19 +31,3 @@ test {
     systemProperty 'selenide.headless', System.getProperty('selenide.headless')
 }
 
-dependencies {
-    implementation 'com.codeborne:selenide:6.12.3'
-    implementation 'org.selenide:selenide-testng:1.0.0'
-    implementation 'org.selenide:selenide-selenoid:2.3.5'
-    implementation 'com.codeborne:selenide-appium:2.6.1'
-    implementation 'com.codeborne:selenide-junit4:6.16.0'
-    implementation 'com.codeborne:jvm2dts:1.5.2'
-    implementation 'com.github.ngoanh2n:webdriverchecker-selenide:2.7.0'
-    implementation 'com.plugatar:selenide-hacks:6.9.0'
-    implementation 'com.codeborne:selenide-proxy:6.16.0'
-    implementation 'com.codeborne:selenide-core:6.16.0'
-    implementation 'com.codeborne:selenide-testng:6.16.0'
-    implementation 'com.codeborne:selenide-clear-with-shortcut:6.16.0'
-    implementation 'com.codeborne:selenide-full-screenshot:6.16.0'
-    implementation 'org.selenide:selenide-junit5-archetype:1.1.0'
-}
