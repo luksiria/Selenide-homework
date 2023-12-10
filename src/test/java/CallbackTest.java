@@ -5,17 +5,10 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 
 
-
 class CallBackTest{
-
-    @BeforeAll
-    public static void setUp() {
-        Configuration.headless = true; // Включение headless-режима
-        // Дополнительные настройки, если необходимо
-    }
-
     @Test
     public void tt(){
+        Configuration.headless = true;
         Selenide.open("http://localhost:9999");
         Selenide.$("[data-test-id=name] input").setValue("оксана");
         Selenide.$("[data-test-id=phone] input").setValue("+70000000000");
