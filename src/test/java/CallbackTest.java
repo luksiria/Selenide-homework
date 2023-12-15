@@ -9,7 +9,7 @@ class CallBackTest{
     @Test
     public void tt(){
         java.util.Date date = new java.util.Date();
-        Configuration.headless = false;
+        Configuration.headless = true;
         Selenide.open("http://localhost:9999");
         Selenide.$("[data-test-id=city] input").setValue("Казань");
         Selenide.$("[data-test-id=date] input").setValue(String.valueOf(date));
